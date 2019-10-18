@@ -1,0 +1,17 @@
+{
+  "name": "react-native-theme-provider",
+  "version": "1.0.0",
+  "description": "Simple package to provide global styles for react-native components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "styles",
+    "themes"
+  ],
+  "author": "jako-hub",
+  "license": "MIT"
+}
