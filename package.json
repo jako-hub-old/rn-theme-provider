@@ -1,6 +1,6 @@
 {
   "name": "rn-theme-provider",
-  "version": "1.0.0",
+  "version": "1.0.0-alfa",
   "description": "Simple package to provide global styles for react-native components.",
   "main": "src/index.js",
   "scripts": {
