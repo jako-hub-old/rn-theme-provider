@@ -1,8 +1,8 @@
 {
-  "name": "react-native-theme-provider",
+  "name": "rn-theme-provider",
   "version": "1.0.0",
   "description": "Simple package to provide global styles for react-native components.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,5 +13,17 @@
     "themes"
   ],
   "author": "jako-hub",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jako-hub/rn-theme-provider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jako-hub/rn-theme-provider/issues"
+  },
+  "homepage": "https://github.com/jako-hub/rn-theme-provider#readme",
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-native": "^0.61.3"
+  }
 }
