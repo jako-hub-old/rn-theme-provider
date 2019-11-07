@@ -2,22 +2,31 @@ import React from 'react';
 import { StyleSheet } from "react-native";
 import ThemeContext from "../contexts/ThemeContext";
 
+/**
+ * Allows you to initialize theme variables and styles.
+ * @author Jorge Alejandro Quiroz Serna <jakop.box@gmail.com>
+ */
 class ThemeProvider extends React.PureComponent {
-  styles = {};
+  theme = {};
 
   constructor(props) {
     super(props);
-    this.initializeStyles();
+    this.initializeTheme();
   }
 
-  initializeStyles() {
+  initializeTheme() {
     const { theme={} } = this.props;
-    this.styles = StyleSheet.create(theme);
+    const {styles={}, variables={}, palette={}} = theme;
+    this.theme = {
+      styles : StyleSheet.create(styles),
+      variables,
+      palette,
+    };
   }
 
   render() {
     const {children} = this.props;
-    return (<ThemeContext.Provider value={this.styles}>{children}</ThemeContext.Provider>);
+    return (<ThemeContext.Provider value={this.theme}>{children}</ThemeContext.Provider>);
   }
 }
 

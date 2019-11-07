@@ -3,6 +3,6 @@ import ThemeContext from "../contexts/ThemeContext";
 
 export default WrappedComponent => (props) => (
   <ThemeContext.Consumer>
-    {(processedStyles) => (<WrappedComponent classes={processedStyles} {...props}/>)}
+    {({styles={}}) => (<WrappedComponent classes={styles} {...props}/>)}
   </ThemeContext.Consumer>
 );
