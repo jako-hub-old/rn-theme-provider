@@ -10,7 +10,9 @@
     "react-native",
     "react",
     "styles",
-    "themes"
+    "theme",
+    "provider",
+    "custom"
   ],
   "author": "jako-hub",
   "license": "MIT",
