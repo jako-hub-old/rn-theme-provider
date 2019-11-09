@@ -1,19 +1,29 @@
 {
   "name": "rn-theme-provider",
-  "version": "1.0.0-alfa",
+  "version": "1.0.1",
   "description": "Simple package to provide global styles for react-native components.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "react-native",
     "react",
+    "react-component",
+    "native",
+    "ios",
+    "android",
     "styles",
     "theme",
     "provider",
     "custom"
   ],
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|@shoutem|react-clone-referenced-element)"
+    ]
+  },
   "author": "jako-hub",
   "license": "MIT",
   "repository": {
@@ -25,7 +35,21 @@
   },
   "homepage": "https://github.com/jako-hub/rn-theme-provider#readme",
   "dependencies": {
+    "jest-react-native": "^18.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^24.8.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "^24.8.0",
+    "prop-types": "^15.7.2",
     "react": "^16.11.0",
-    "react-native": "^0.61.3"
+    "react-native": "^0.61.3",
+    "react-test-renderer": "16.4.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.4.1",
+    "react-native": ">=0.56.0"
   }
 }

@@ -10,3 +10,7 @@ tmp
 
 # Examples (If applicable to your project)
 examples
+
+# Test cases
+__tests__
+**/__snapshots__
